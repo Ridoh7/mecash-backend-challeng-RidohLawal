@@ -1,19 +1,13 @@
 spring:
-  application:
-    name: mecash
-
   datasource:
     url: jdbc:postgresql://localhost:5432/mecash
-    username: postgres
-    password: Allah-110292$$
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
   jpa:
     hibernate:
       ddl-auto: validate
-    show-sql: true
+    open-in-view: false
 
   flyway:
     enabled: true
-
-server:
-  port: 8080
