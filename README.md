@@ -18,13 +18,20 @@
 - Flyway
 - Swagger OpenAPI
 
-## Run
+## API Endpoints
 
-1. Create PostgreSQL database
+POST /api/auth/signup
+POST /api/auth/login
+GET /api/accounts/{accountNumber}/balance
+POST /api/transactions/transfer
+GET /api/transactions/{accountNumber}/history
 
-2. Configure application.yml
+## Setup
 
-3. Run:
+1. Clone repository
+2. Create PostgreSQL database named mecash
+3. Configure application.yml
+4. Run:
 
 mvn spring-boot:run
 
