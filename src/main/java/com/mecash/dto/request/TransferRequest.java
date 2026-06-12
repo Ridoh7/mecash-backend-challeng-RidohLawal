@@ -6,6 +6,12 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
+/**
+ * Request payload for transferring funds
+ * between two accounts.
+ *
+ * The transfer amount must be greater than zero.
+ */
 @Data
 public class TransferRequest {
 
